@@ -1,0 +1,37 @@
+h1
+{
+    color: Brown;
+}
+
+.all
+{
+    width: 600px;
+    height: 600px;
+    margin: auto;
+}
+
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    margin-left: 27%;
+    background-color: darkgreen;
+}
+
+.hole
+{
+    margin: 50px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: brown;
+    border: 10px solid black;
+}
+
+#mole
+{
+    width: 70px;
+    height: 70px;
+    background-image:       url(http://www.stickpng.com/assets/images/59aeb65e32bcd87615d27986.png);
+}
