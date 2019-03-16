@@ -14,7 +14,7 @@ window.onload = function()
             if (dirt[i].innerHTML)
             {
                 sound.play();
-                dirt.innerHTML = "";
+                dirt[i].innerHTML = "";
                 score++
             }
             else
@@ -30,11 +30,11 @@ setInterval (function setMole()
 {
     var mole = document.createElement("div");
     mole.setAttribute("id", "mole");
-    var index = Math.floor(Math.random() * Math.floor(dirt.length));
+    var index = Math.floor(Math.random() * Math.floor(hole.length));
     
-    if (dirt[index].innerHTML == "")
+    if (hole[index].innerHTML == "")
     {
-        dirt[index].appendChild(mole);
+        hole[index].appendChild(mole);
     }
     else
     {
