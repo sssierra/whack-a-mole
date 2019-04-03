@@ -1,21 +1,21 @@
 window.onload = function()
 {
-    var hole = document.getElementsByClassName('dirt');
+    var dirt = document.getElementsByClassName('dirt');
     var sound = document.getElementById("sound"); 
-    var dirt = document.getElementById("dirtBox"); 
+    var grid = document.getElementById("dirt-box"); 
     
     var score = 0;
     document.getElementById("score").innerHTML = "Score: " + score;
     
     
-    for (let i = 0; i < dirt.length; i++)
+    for (let i = 0; i < grid.length; i++)
     {
-        dirt[i].addEventListener("click", function () 
+        grid[i].addEventListener("click", function () 
         {
-            if (dirt[i].innerHTML)
+            if (grid[i].innerHTML)
             {
                 sound.play();
-                dirt[i].innerHTML = "";
+                grid[i].innerHTML = "";
                 score++
             }
             else
@@ -31,11 +31,11 @@ setInterval (function setMole()
 {
     var mole = document.createElement("div");
     mole.setAttribute("id", "mole");
-    var random = Math.floor(Math.random() * Math.floor(hole.length));
+    var random = Math.floor(Math.random() * Math.floor(dirt.length));
     
-    if (hole[random].innerHTML === "")
+    if (dirt[random].innerHTML === "")
     {
-        hole[random].appendChild(mole);
+        dirt[random].appendChild(mole);
     }
     else
     {
