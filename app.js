@@ -2,7 +2,8 @@ window.onload = function()
 {
     var hole = document.getElementsByClassName('dirt');
     var sound = document.getElementById("sound"); 
-    var dirt = document.getElementById("dirtBox");    
+    var dirt = document.getElementById("dirtBox"); 
+    
     var score = 0;
     document.getElementById("score").innerHTML = "Score: " + score;
     
@@ -21,8 +22,8 @@ window.onload = function()
             {
                 console.log("Nothing is there.");
             }
-        })
-    }
+        });
+    };
 
 
 
@@ -30,11 +31,11 @@ setInterval (function setMole()
 {
     var mole = document.createElement("div");
     mole.setAttribute("id", "mole");
-    var index = Math.floor(Math.random() * Math.floor(hole.length));
+    var random = Math.floor(Math.random() * Math.floor(hole.length));
     
-    if (hole[index].innerHTML == "")
+    if (hole[random].innerHTML === "")
     {
-        hole[index].appendChild(mole);
+        hole[random].appendChild(mole);
     }
     else
     {
