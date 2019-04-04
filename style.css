@@ -29,9 +29,12 @@ h1
     border: 10px solid black;
 }
 
-#mole
-{
-    width: 70px;
-    height: 70px;
-    background-image:       url(http://www.stickpng.com/assets/images/59aeb65e32bcd87615d27986.png);
+#mole{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    margin: 0px;
+    background-position: center;
+    background-size: 80px;
+    background-image: url(http://www.stickpng.com/assets/images/59aeb65e32bcd87615d27986.png);
 }
