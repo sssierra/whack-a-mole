@@ -10,12 +10,12 @@ window.onload = function()
     
     for (let i = 0; i < grid.length; i++)
     {
-        grid[i].addEventListener("click", function () 
+        dirt[i].addEventListener("click", function () 
         {
-            if (grid[i].innerHTML)
+            if (dirt[i].innerHTML)
             {
                 sound.play();
-                grid[i].innerHTML = "";
+                dirt[i].innerHTML = "";
                 score++
             }
             else
@@ -43,4 +43,4 @@ setInterval (function setMole()
     }
 }
 , 3000);
-}
+};
