@@ -3,11 +3,12 @@ h1
     color: Brown;
 }
 
-.all
+#container
 {
     width: 600px;
     height: 600px;
     margin: auto;
+    background-image: url(https://5.imimg.com/data5/GD/UW/MY-1664847/ground107-grass-pngb5434ae6-1965-41-500x500.jpg);
 }
 
 .row
@@ -15,21 +16,20 @@ h1
     display: flex;
     flex-wrap: wrap;
     width: 600px;
-    margin-left: 27%;
-    background-color: darkgreen;
+    margin: auto;
 }
 
-.hole
+.dirt
 {
     margin: 50px;
     width: 80px;
     height: 80px;
     border-radius: 50px;
     background-color: brown;
-    border: 10px solid black;
+    border: 10px solid #003300;
 }
 
-#mole{
+.mole{
     width: 80px;
     height: 80px;
     border-radius: 50px;
@@ -37,4 +37,4 @@ h1
     background-position: center;
     background-size: 80px;
     background-image: url(http://www.stickpng.com/assets/images/59aeb65e32bcd87615d27986.png);
-}
+} 
