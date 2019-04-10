@@ -4,19 +4,19 @@ window.onload = function()
     var sound = document.getElementById("sound"); 
     var grid = document.getElementById("dirt-box"); 
     
-    var score = 0;
-    document.getElementById("score").innerHTML = "Score: " + score;
+    var score = 0;    
     
-    
-    for (let i = 0; i < grid.length; i++)
+    for (let i = 0; i < dirt.length; i++)
     {
-        dirt[i].addEventListener("click", function () 
+        dirt[i].addEventListener("click", function click() 
         {
             if (dirt[i].innerHTML)
             {
                 sound.play();
                 dirt[i].innerHTML = "";
-                score++
+                score++;
+                document.getElementById("score").innerHTML = "Score: " + score;
+
             }
             else
             {
@@ -26,11 +26,10 @@ window.onload = function()
     };
 
 
-
 setInterval (function setMole()
 {
     var mole = document.createElement("div");
-    mole.setAttribute("id", "mole");
+    mole.setAttribute("class", "mole");
     var random = Math.floor(Math.random() * Math.floor(dirt.length));
     
     if (dirt[random].innerHTML === "")
@@ -41,6 +40,5 @@ setInterval (function setMole()
     {
         console.log("There are too many moles!");
     }
-}
-, 3000);
+}, 1000);
 };
